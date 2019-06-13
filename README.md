@@ -30,11 +30,11 @@ Your background (even white) needs to be in another tag than body.
 #### Exemple
 ```css
 body {
-  background: #fff; //The darkmode library will NOT work
+  background: #fff; /* The darkmode library will NOT work */
 }
 
 main {
-  background: #fff; //The darkmode library WILL work
+  background: #fff; /* The darkmode library WILL work */
 }
 ```
 
