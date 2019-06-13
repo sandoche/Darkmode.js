@@ -119,7 +119,7 @@ export default class Darkmode {
   showWidget() {
     const button = this.button;
     const layer = this.layer;
-    const time = parseFloat(this.time)*1000;
+    const time = parseFloat(this.time) * 1000;
 
     if (layer.classList.contains('darkmode-layer--simple') && this.saveInCookies) {
       layer.classList.remove('darkmode-layer--simple');
@@ -130,8 +130,8 @@ export default class Darkmode {
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
-      const isDarkmode = document.body.classList.contains('darkmode--activated')
-      
+      const isDarkmode = document.body.classList.contains('darkmode--activated');
+
       if (!isDarkmode) {
         layer.classList.add('darkmode-layer--expanded');
         setTimeout(() => {
@@ -155,7 +155,7 @@ export default class Darkmode {
 
   toggle() {
     const layer = this.layer;
-    const isDarkmode = document.body.classList.contains('darkmode--activated')
+    const isDarkmode = document.body.classList.contains('darkmode--activated');
 
     layer.classList.toggle('darkmode-layer--simple');
     document.body.classList.toggle('darkmode--activated');
