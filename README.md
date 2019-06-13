@@ -27,7 +27,7 @@ Just add this code to your html page:
 ### Important
 Your background (even white) needs to be in another tag than body.
 
-#### Exemple
+#### Example
 ```css
 body {
   background: #fff; /* The darkmode library will NOT work */
@@ -35,6 +35,14 @@ body {
 
 main {
   background: #fff; /* The darkmode library WILL work */
+}
+```
+
+#### Debug
+If it does not work you may have to add the following code, but this will invalidate the classes to override.
+```css
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
 }
 ```
 
@@ -79,6 +87,16 @@ darkmode.toggle();
 ## Override style
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
 * Use the class `darkmode-ignore` where you don't want to apply darkmode
+
+### Examples
+```css
+.darkmode--activated p, .darkmode--activated li {
+  color: #000;
+}
+```
+```html
+<span class="darkmode-ignore">😬<span>
+```
 
 ## Development
 * `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
