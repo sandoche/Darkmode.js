@@ -24,20 +24,6 @@ Just add this code to your html page:
 </script>
 ```
 
-### Important
-Your background (even white) needs to be in another tag than body.
-
-#### Example
-```css
-body {
-  background: #fff; /* The darkmode library will NOT work */
-}
-
-main {
-  background: #fff; /* The darkmode library WILL work */
-}
-```
-
 #### Debug
 If it does not work you may have to add the following code, but this will invalidate the classes to override.
 ```css
@@ -82,7 +68,6 @@ If you don't want to show the widget and enable/disable Darkmode programatically
 const darkmode =  new Darkmode();
 darkmode.toggle();
 ```
-
 
 ## Override style
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style

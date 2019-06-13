@@ -56,6 +56,17 @@ export default class Darkmode {
       .darkmode-toggle--white {
         background: ${buttonColorLight};
       }
+
+      .darkmode-background {
+        background: ${mixColor};
+        position: fixed;
+        pointer-events: none;
+        z-index: -10;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+      }
       
       img, .darkmode-ignore {
         isolation: isolate;
@@ -65,8 +76,10 @@ export default class Darkmode {
 
     const layer = document.createElement('div');
     const button = document.createElement('div');
+    const background = document.createElement('div');
 
     layer.classList.add('darkmode-layer');
+    background.classList.add('darkmode-background');
 
     const darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
 
@@ -78,6 +91,7 @@ export default class Darkmode {
 
     document.body.insertBefore(button, document.body.firstChild);
     document.body.insertBefore(layer, document.body.firstChild);
+    document.body.insertBefore(background, document.body.firstChild);
 
     this.addStyle(css);
 
