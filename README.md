@@ -17,7 +17,7 @@ Your background (even white) needs to be in another tag than body.
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode/lib/darkmode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode.min.js"></script>
 <script>
   new Darkmode().showWidget();
 </script>
