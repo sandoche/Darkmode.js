@@ -25,6 +25,6 @@ describe('Given an instance of Darkmode', () => {
       left: '32px',
       time: '0.5s',
       saveInCookies: false
-    });
+    }).showWidget();
   });
 });
