@@ -32,7 +32,6 @@ export default class Darkmode {
       .darkmode-layer--simple {
         width: 100vw;
         height: 100vh;
-        border-radius: 0;
         top: 0;
         left: 0;
         transform: scale(1) !important;
@@ -40,6 +39,7 @@ export default class Darkmode {
       
       .darkmode-layer--expanded {
         transform: scale(100);
+        border-radius: 0;
       }
 
       .darkmode-layer--no-transition {
@@ -140,8 +140,8 @@ export default class Darkmode {
         }, time);
       } else {
         layer.classList.remove('darkmode-layer--simple');
-        layer.classList.remove('darkmode-layer--no-transition');
         setTimeout(() => {
+          layer.classList.remove('darkmode-layer--no-transition');
           layer.classList.remove('darkmode-layer--expanded');
         }, 1);
       }
@@ -149,7 +149,7 @@ export default class Darkmode {
       // layer.classList.toggle('darkmode-layer--expanded');
       button.classList.toggle('darkmode-toggle--white');
       document.body.classList.toggle('darkmode--activated');
-      window.localStorage.setItem('darkmode', isDarkmode);
+      window.localStorage.setItem('darkmode', !isDarkmode);
     });
   }
 
@@ -159,6 +159,6 @@ export default class Darkmode {
 
     layer.classList.toggle('darkmode-layer--simple');
     document.body.classList.toggle('darkmode--activated');
-    window.localStorage.setItem('darkmode', isDarkmode);
+    window.localStorage.setItem('darkmode', !isDarkmode);
   }
 }
