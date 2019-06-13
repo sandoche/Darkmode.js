@@ -1,5 +1,3 @@
-![Logo](logo.gif "Logo")
-
 # Darkmode.js ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 🌓 Add darkmode / nightmode to your website in a few seconds
