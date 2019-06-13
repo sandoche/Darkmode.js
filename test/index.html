@@ -3,7 +3,7 @@
   <head>
     <title>Manual testing of Darkmode widget</title>
     <style>
-      * {
+      body, html {
         margin: 0;
         padding: 0;
       }
@@ -12,21 +12,37 @@
         height: 100vh;
         width: 100%;
       }
+      .container {
+        max-width: 560px;
+        padding: 64px;
+        margin: auto;
+      }
     </style>
   </head>
   <body>
     <main>
-      <h1>Darkmode manual test</h1>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. At tellus at urna condimentum mattis pellentesque id nibh. Pretium aenean pharetra magna ac placerat vestibulum. Integer enim neque volutpat ac tincidunt vitae semper. Dictum sit amet justo donec enim diam vulputate ut. Ut tellus elementum sagittis vitae et leo duis. Vitae sapien pellentesque habitant morbi. Pellentesque diam volutpat commodo sed egestas egestas fringilla. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed.
-      </p>
+      <div class="container">
+        <h1>Darkmode manual test</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. At tellus at urna condimentum mattis pellentesque id nibh. Pretium aenean pharetra magna ac placerat vestibulum. Integer enim neque volutpat ac tincidunt vitae semper. Dictum sit amet justo donec enim diam vulputate ut. Ut tellus elementum sagittis vitae et leo duis. Vitae sapien pellentesque habitant morbi. Pellentesque diam volutpat commodo sed egestas egestas fringilla. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. At tellus at urna condimentum mattis pellentesque id nibh. Pretium aenean pharetra magna ac placerat vestibulum. Integer enim neque volutpat ac tincidunt vitae semper. Dictum sit amet justo donec enim diam vulputate ut. Ut tellus elementum sagittis vitae et leo duis. Vitae sapien pellentesque habitant morbi. Pellentesque diam volutpat commodo sed egestas egestas fringilla. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. At tellus at urna condimentum mattis pellentesque id nibh. Pretium aenean pharetra magna ac placerat vestibulum. Integer enim neque volutpat ac tincidunt vitae semper. Dictum sit amet justo donec enim diam vulputate ut. Ut tellus elementum sagittis vitae et leo duis. Vitae sapien pellentesque habitant morbi. Pellentesque diam volutpat commodo sed egestas egestas fringilla. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+        </p>
+      </div>
     </main>
-    <script src="darkmode.js"></script>
+    <script src="../lib/darkmode-js.js"></script>
     <script>
       new Darkmode({
         bottom: '32px',
         right: '32px',
         time: '0.5s',
+        mixColor: '#fff',
+        buttonColorDark: '#333',
+        buttonColorLight: '#ddd',
         saveInCookies: true
       }).showWidget();
     </script>

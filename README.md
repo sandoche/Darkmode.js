@@ -2,6 +2,11 @@
 
 🌓 Add darkmode / nightmode to your website in a few seconds
 
+This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your website.
+You can use this library to display a widget or just use it programmatically without widget!
+
+I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
+
 ## Demo
 Check out the demo in these websites: 
 - (coming soon)
@@ -15,7 +20,7 @@ Your background (even white) needs to be in another tag than body.
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
 </script>
@@ -33,9 +38,6 @@ import Darkmode from 'darkmode';
 new Darkmode().showWidget();
 ```
 
-### Programmatically (without the widget)
-(coming soon)
-
 ## Options
 Here are the option availables:
 ```javascript
@@ -45,6 +47,10 @@ var options = {
 const darkmode = Darkmode(options);
 darkmode.showWidget();
 ```
+
+## Methods
+
+## CSS Class for exceptions
 
 ## Development
 

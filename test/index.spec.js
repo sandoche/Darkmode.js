@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import Darkmode from '../lib/darkmode';
+import Darkmode from '../lib/darkmode-js';
 
 chai.use(require('chai-dom'));
 chai.expect();
@@ -24,6 +24,9 @@ describe('Given an instance of Darkmode', () => {
       right: 'unset',
       left: '32px',
       time: '0.5s',
+      mixColor: '#fff',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
       saveInCookies: false
     }).showWidget();
   });

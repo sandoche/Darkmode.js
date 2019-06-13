@@ -4,6 +4,9 @@ export default class Darkmode {
     const right = options && options.right ? options.right : '32px';
     const left = options && options.left ? options.left : 'unset';
     const time = options && options.time ? options.time : '0.3s';
+    const mixColor = options && options.mixColor ? options.mixColor : '#fff';
+    const buttonColorDark = options && options.buttonColorDark ? options.buttonColorDark : '#100f2c';
+    const buttonColorLight = options && options.buttonColorLight ? options.buttonColorLight : '#fff';
     /* eslint-disable */
     const saveInCookies = options && options.saveInCookies === false ? false : true;
     /* eslint-enable */
@@ -12,7 +15,7 @@ export default class Darkmode {
       .darkmode-layer {
         position: fixed;
         pointer-events: none;
-        background: white;
+        background: ${mixColor};
         transition: all ${time} ease;
         mix-blend-mode: difference;
       }
@@ -38,7 +41,7 @@ export default class Darkmode {
       }
       
       .darkmode-toggle {
-        background: #100f2c;
+        background: ${buttonColorDark};
         width: 3rem;
         height: 3rem;
         position: fixed;
@@ -51,7 +54,7 @@ export default class Darkmode {
       }
       
       .darkmode-toggle--white {
-        background: #fff;
+        background: ${buttonColorLight};
       }
       
       img, .darkmode-ignore {
