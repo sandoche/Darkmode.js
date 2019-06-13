@@ -4,6 +4,7 @@
 
 This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your website.
 You can use this library to display a widget or just use it programmatically without widget!
+It also uses localstorage by default so your last setting will be remembered !
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
 
@@ -14,9 +15,6 @@ Check out the demo in these websites:
 ## How to use
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
 
-### Important
-Your background (even white) needs to be in another tag than body.
-
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
@@ -24,6 +22,20 @@ Just add this code to your html page:
 <script>
   new Darkmode().showWidget();
 </script>
+```
+
+### Important
+Your background (even white) needs to be in another tag than body.
+
+#### Exemple
+```css
+body {
+  background: #fff; //The darkmode library will NOT work
+}
+
+main {
+  background: #fff; //The darkmode library WILL work
+}
 ```
 
 ### Using NPM
@@ -42,18 +54,33 @@ new Darkmode().showWidget();
 Here are the option availables:
 ```javascript
 var options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false // default: true
 }
 
-const darkmode = Darkmode(options);
+const darkmode = new Darkmode(options);
 darkmode.showWidget();
 ```
 
 ## Methods
+If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()` like this:
+```javascript
+const darkmode =  new Darkmode();
+darkmode.toggle();
+```
 
-## CSS Class for exceptions
+
+## Override style
+* A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
+* Use the class `darkmode-ignore` where you don't want to apply darkmode
 
 ## Development
-
 * `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
 * `yarn dev` or `npm run dev` - produces development version of your library and runs a watcher
 * `yarn test` or `npm run test` - it runs the tests :)
