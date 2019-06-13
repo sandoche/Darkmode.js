@@ -45,17 +45,18 @@
     "babel-preset-env": "^7.0.0-beta.3",
     "babel-register": "^7.0.0-beta.3",
     "chai": "^4.1.2",
+    "chai-dom": "^1.8.1",
     "cross-env": "^5.2.0",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
     "jsdom": "11.11.0",
     "jsdom-global": "3.0.2",
     "mocha": "^4.0.1",
+    "nyc": "^13.1.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8",
-    "yargs": "^10.0.3",
-    "nyc": "^13.1.0"
+    "yargs": "^10.0.3"
   },
   "nyc": {
     "sourceMap": false,
