@@ -1,15 +1,15 @@
 {
   "name": "darkmode-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "🌓 Add darkmode / nightmode to your website in a few seconds",
-  "main": "lib/darkmode.js",
+  "main": "lib/darkmode-js.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
-    "repl": "node -i -e \"$(< ./lib/darkmode.js)\""
+    "repl": "node -i -e \"$(< ./lib/darkmode-js.js)\""
   },
   "repository": {
     "type": "git",
