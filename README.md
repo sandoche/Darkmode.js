@@ -11,6 +11,7 @@ I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon
 ## Demo
 Check out the demo in these websites: 
 - https://darkmodejs.learn.uno
+- https://www.sandoche.com
 
 ## How to use
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
