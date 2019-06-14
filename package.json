@@ -1,11 +1,12 @@
 {
   "name": "darkmode-js",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "🌓 Add darkmode / nightmode to your website in a few seconds",
   "main": "lib/darkmode-js.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
+    "serve": "http-server",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
@@ -49,6 +50,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
+    "http-server": "^0.11.1",
     "jsdom": "11.11.0",
     "jsdom-global": "3.0.2",
     "mocha": "^4.0.1",

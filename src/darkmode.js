@@ -90,7 +90,7 @@ export default class Darkmode {
     const darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
 
     if (darkmodeActivated === true && saveInCookies) {
-      layer.classList.add('darkmode-layer--simple');
+      layer.classList.add('darkmode-layer--expanded', 'darkmode-layer--simple', 'darkmode-layer--no-transition');
       button.classList.add('darkmode-toggle--white');
       document.body.classList.add('darkmode--activated');
     }
@@ -121,11 +121,6 @@ export default class Darkmode {
     const layer = this.layer;
     const time = parseFloat(this.time) * 1000;
 
-    if (layer.classList.contains('darkmode-layer--simple') && this.saveInCookies) {
-      layer.classList.remove('darkmode-layer--simple');
-      layer.classList.add('darkmode-layer--expanded');
-    }
-
     button.classList.add('darkmode-toggle');
     layer.classList.add('darkmode-layer--button');
 
@@ -146,7 +141,6 @@ export default class Darkmode {
         }, 1);
       }
 
-      // layer.classList.toggle('darkmode-layer--expanded');
       button.classList.toggle('darkmode-toggle--white');
       document.body.classList.toggle('darkmode--activated');
       window.localStorage.setItem('darkmode', !isDarkmode);
