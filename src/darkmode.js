@@ -7,7 +7,7 @@ export default class Darkmode {
     const mixColor = options && options.mixColor ? options.mixColor : '#fff';
     const buttonColorDark = options && options.buttonColorDark ? options.buttonColorDark : '#100f2c';
     const buttonColorLight = options && options.buttonColorLight ? options.buttonColorLight : '#fff';
-    const label = options && options.label ? options.label : ''
+    const label = options && options.label ? options.label : '';
     /* eslint-disable */
     const saveInCookies = options && options.saveInCookies === false ? false : true;
     /* eslint-enable */
