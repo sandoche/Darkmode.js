@@ -86,6 +86,12 @@ If it does not work you may have to add the following code, but this will invali
 }
 ```
 
+## Browser compatibility
+This library uses the CSS `mix-blend-mode: difference;` in order to provide the darkmode.
+It may not be compatible with all the browsers.
+
+Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
+
 ## Development
 * `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
 * `yarn dev` or `npm run dev` - produces development version of your library and runs a watcher
