@@ -57,10 +57,11 @@ darkmode.showWidget();
 ```
 
 ## Methods
-If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()` like this:
+If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the darkmode is activated with the method `isActivated()`. See them in action in the following action.
 ```javascript
 const darkmode =  new Darkmode();
 darkmode.toggle();
+console.log(darkmode.isActivated()) // will return true
 ```
 
 ## Override style
