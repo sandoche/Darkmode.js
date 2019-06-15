@@ -11,9 +11,12 @@ I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon
 ## ✨ Demo
 Check out the demo in these websites: 
 - https://darkmodejs.learn.uno
-- https://www.sandoche.com
+- https://tradivegan.com (with custom label)
+- https://what.toeat.in (with custom label)
+- https://www.kanbanote.com (without the widget, once logged in)
+- https://www.sandoche.com (with custom label)
 
-## How to use
+## 📖 How to use
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
 
 ### 🚀 Easy way (using the JSDelivr CDN)
@@ -37,7 +40,7 @@ import Darkmode from 'darkmode-js';
 new Darkmode().showWidget();
 ```
 
-## Options
+## ⚙️ Options
 Here are the option availables:
 ```javascript
 var options = {
@@ -56,7 +59,7 @@ const darkmode = new Darkmode(options);
 darkmode.showWidget();
 ```
 
-## Methods
+## ▶️ Methods
 If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the darkmode is activated with the method `isActivated()`. See them in action in the following action.
 ```javascript
 const darkmode =  new Darkmode();
@@ -103,7 +106,7 @@ Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
 * `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
 
-## Show your support
+## ⭐️ Show your support
 Please ⭐️ this repository if this project helped you!
 
 <a href="https://www.patreon.com/sandoche">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
