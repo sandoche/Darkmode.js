@@ -100,7 +100,8 @@ Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
 
 ## Show your support
 Please ⭐️ this repository if this project helped you!
-<a href="https://www.patreon.com/getify">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
+
+<a href="https://www.patreon.com/sandoche">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
 
 ## Buy me a beer 🍺
 If you like this project, feel free to donate:
