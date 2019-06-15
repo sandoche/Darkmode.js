@@ -13,21 +13,44 @@ global.window = {
   localStorage: {
     getItem: function(id) {
       return true;
-    }
+    },
+    setItem: function() {}
   }
 };
 
 describe('Given an instance of Darkmode', () => {
-  before(() => {
-    Darkmode({
-      bottom: '64px',
-      right: 'unset',
-      left: '32px',
-      time: '0.5s',
-      mixColor: '#fff',
-      buttonColorDark: '#100f2c',
-      buttonColorLight: '#fff',
-      saveInCookies: false
-    }).showWidget();
+  var darkmode = new Darkmode({
+    bottom: '64px',
+    right: 'unset',
+    left: '32px',
+    time: '0.5s',
+    mixColor: '#fff',
+    buttonColorDark: '#100f2c',
+    buttonColorLight: '#fff',
+    saveInCookies: false,
+    label: '🌓'
   });
+  describe('After creating an instance', () => {
+    it('should not activate darkmode', () => {
+      expect(darkmode.isActivated()).to.be.false;
+    })
+  })
+  describe('When I run toggle()', () => {
+    it('should activate darkmode', () => {
+      darkmode.toggle();
+      expect(darkmode.isActivated()).to.be.true;
+    })
+  })
+  describe('When I run toggle() a second time', () => {
+    it('should disactivate darkmode', () => {
+      darkmode.toggle();
+      expect(darkmode.isActivated()).to.be.false;
+    })
+  })
+  describe('When I run showWidget()', () => {
+    it('the widget should have its label', () => {
+      darkmode.showWidget();
+      expect(document.getElementsByClassName('darkmode-toggle')[0]).to.have.html('🌓');
+    })
+  })
 });
