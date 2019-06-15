@@ -130,7 +130,7 @@ export default class Darkmode {
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
-      const isDarkmode = document.body.classList.contains('darkmode--activated');
+      const isDarkmode = this.isActivated();
 
       if (!isDarkmode) {
         layer.classList.add('darkmode-layer--expanded');
@@ -154,10 +154,14 @@ export default class Darkmode {
 
   toggle() {
     const layer = this.layer;
-    const isDarkmode = document.body.classList.contains('darkmode--activated');
+    const isDarkmode = this.isActivated();
 
     layer.classList.toggle('darkmode-layer--simple');
     document.body.classList.toggle('darkmode--activated');
     window.localStorage.setItem('darkmode', !isDarkmode);
+  }
+
+  isActivated() {
+    return document.body.classList.contains('darkmode--activated');
   }
 }
