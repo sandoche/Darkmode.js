@@ -8,7 +8,7 @@ It also uses localstorage by default so your last setting will be remembered !
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
 
-## Demo
+## ✨ Demo
 Check out the demo in these websites: 
 - https://darkmodejs.learn.uno
 - https://www.sandoche.com
@@ -16,7 +16,7 @@ Check out the demo in these websites:
 ## How to use
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
 
-### Easy way (using the JSDelivr CDN)
+### 🚀 Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.2.5/lib/darkmode-js.min.js"></script>
@@ -25,7 +25,7 @@ Just add this code to your html page:
 </script>
 ```
 
-### Using NPM
+### 📦 Using NPM
 ```sh
 npm install darkmode-js
 ```
@@ -103,7 +103,7 @@ Please ⭐️ this repository if this project helped you!
 
 <a href="https://www.patreon.com/sandoche">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
 
-## Buy me a beer 🍺
+## 🍺 Buy me a beer 
 If you like this project, feel free to donate:
 * Paypal: https://www.paypal.me/kanbanote
 * Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
