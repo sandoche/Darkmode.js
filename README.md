@@ -67,11 +67,16 @@ console.log(darkmode.isActivated()) // will return true
 ## Override style
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
 * Use the class `darkmode-ignore` where you don't want to apply darkmode
+* You can also add this style: `isolation: isolate;` in your css
 
 ### Examples
 ```css
 .darkmode--activated p, .darkmode--activated li {
   color: #000;
+}
+
+.button {
+  isolation: isolate;
 }
 ```
 ```html
