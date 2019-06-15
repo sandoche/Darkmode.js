@@ -19,18 +19,10 @@ Darkmode.js is very easy to use, just copy paste the following code or use the n
 ### Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.2.3/lib/darkmode-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.2.4/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
 </script>
-```
-
-#### Debug
-If it does not work you may have to add the following code, but this will invalidate the classes to override.
-```css
-.darkmode-layer, .darkmode-toggle {
-  z-index: 500;
-}
 ```
 
 ### Using NPM
@@ -56,7 +48,8 @@ var options = {
   mixColor: '#fff', // default: '#fff'
   buttonColorDark: '#100f2c',  // default: '#100f2c'
   buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false // default: true
+  saveInCookies: false, // default: true,
+  label: '🌓' // default: ''
 }
 
 const darkmode = new Darkmode(options);
@@ -82,6 +75,14 @@ darkmode.toggle();
 ```
 ```html
 <span class="darkmode-ignore">😬<span>
+```
+
+## Debug
+If it does not work you may have to add the following code, but this will invalidate the classes to override.
+```css
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
 ```
 
 ## Development

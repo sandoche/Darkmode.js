@@ -7,6 +7,7 @@ export default class Darkmode {
     const mixColor = options && options.mixColor ? options.mixColor : '#fff';
     const buttonColorDark = options && options.buttonColorDark ? options.buttonColorDark : '#100f2c';
     const buttonColorLight = options && options.buttonColorLight ? options.buttonColorLight : '#fff';
+    const label = options && options.label ? options.label : ''
     /* eslint-disable */
     const saveInCookies = options && options.saveInCookies === false ? false : true;
     /* eslint-enable */
@@ -57,6 +58,9 @@ export default class Darkmode {
         left: ${left};
         cursor: pointer;
         transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       
       .darkmode-toggle--white {
@@ -84,6 +88,7 @@ export default class Darkmode {
     const button = document.createElement('div');
     const background = document.createElement('div');
 
+    button.innerHTML = label;
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
 
