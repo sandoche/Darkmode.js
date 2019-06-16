@@ -31,8 +31,8 @@ export default class Darkmode {
       }
 
       .darkmode-layer--simple {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         transform: scale(1) !important;
@@ -72,8 +72,8 @@ export default class Darkmode {
         position: fixed;
         pointer-events: none;
         z-index: -10;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
       }
