@@ -2,8 +2,8 @@
 
 🌓 Add darkmode / nightmode to your website in a few seconds
 
-This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your website.
-You can use this library to display a widget or just use it programmatically without widget!
+This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your websites.
+Just copy paste the snippet and you will get a widget to turn on and off the dark-mode. You can also use it without the widget programmatically. The plugin is lightweight, built in VanillaJS.
 It also uses localstorage by default so your last setting will be remembered !
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
@@ -60,7 +60,7 @@ darkmode.showWidget();
 ```
 
 ## ▶️ Methods
-If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the darkmode is activated with the method `isActivated()`. See them in action in the following action.
+If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the darkmode is activated with the method `isActivated()`. See them in action in the following example.
 ```javascript
 const darkmode =  new Darkmode();
 darkmode.toggle();
@@ -70,7 +70,7 @@ console.log(darkmode.isActivated()) // will return true
 ## Override style
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
 * Use the class `darkmode-ignore` where you don't want to apply darkmode
-* You can also add this style: `isolation: isolate;` in your css
+* You can also add this style: `isolation: isolate;` in your css, this will also ignore the darkmode.
 
 ### Examples
 ```css
