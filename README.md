@@ -1,6 +1,6 @@
 # Darkmode.js ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-🌓 Add darkmode / nightmode to your website in a few seconds
+🌓 Add a dark-mode / night-mode to your website in a few seconds
 
 This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your websites.
 Just copy paste the snippet and you will get a widget to turn on and off the dark-mode. You can also use it without the widget programmatically. The plugin is lightweight, built in VanillaJS.
