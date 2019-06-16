@@ -71,6 +71,7 @@ console.log(darkmode.isActivated()) // will return true
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
 * Use the class `darkmode-ignore` where you don't want to apply darkmode
 * You can also add this style: `isolation: isolate;` in your css, this will also ignore the darkmode.
+* It is also possible to revert the dark-mode with this style `mix-blend-mode: difference;`
 
 ### Examples
 ```css
@@ -80,6 +81,10 @@ console.log(darkmode.isActivated()) // will return true
 
 .button {
   isolation: isolate;
+}
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
 }
 ```
 ```html
