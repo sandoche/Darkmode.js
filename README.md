@@ -22,7 +22,7 @@ Darkmode.js is very easy to use, just copy paste the following code or use the n
 ### 🚀 Easy way (using the JSDelivr CDN)
 Just add this code to your html page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.2/lib/darkmode-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
 </script>
@@ -49,6 +49,7 @@ var options = {
   left: '32px', // default: 'unset'
   time: '0.5s', // default: '0.3s'
   mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
   buttonColorDark: '#100f2c',  // default: '#100f2c'
   buttonColorLight: '#fff', // default: '#fff'
   saveInCookies: false, // default: true,

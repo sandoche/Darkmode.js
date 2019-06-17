@@ -1,6 +1,6 @@
 {
   "name": "darkmode-js",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "🌓 Add darkmode / nightmode to your website in a few seconds",
   "main": "lib/darkmode-js.js",
   "scripts": {

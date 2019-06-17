@@ -5,6 +5,7 @@ export default class Darkmode {
     const left = options && options.left ? options.left : 'unset';
     const time = options && options.time ? options.time : '0.3s';
     const mixColor = options && options.mixColor ? options.mixColor : '#fff';
+    const backgroundColor = options && options.backgroundColor ? options.backgroundColor : '#fff';
     const buttonColorDark = options && options.buttonColorDark ? options.buttonColorDark : '#100f2c';
     const buttonColorLight = options && options.buttonColorLight ? options.buttonColorLight : '#fff';
     const label = options && options.label ? options.label : '';
@@ -68,7 +69,7 @@ export default class Darkmode {
       }
 
       .darkmode-background {
-        background: ${mixColor};
+        background: ${backgroundColor};
         position: fixed;
         pointer-events: none;
         z-index: -10;
