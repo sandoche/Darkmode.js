@@ -1,10 +1,10 @@
 # Darkmode.js ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-🌓 Add a dark-mode / night-mode to your website in a few seconds
+🌓 Add a Dark Mode / Night Mode to your website in a few seconds
 
-This library uses the css `mix-blend-mode` in order to bring Dark-mode to any of your websites.
-Just copy paste the snippet and you will get a widget to turn on and off the dark-mode. You can also use it without the widget programmatically. The plugin is lightweight, built in VanillaJS.
-It also uses localstorage by default so your last setting will be remembered !
+This library uses the css `mix-blend-mode` in order to bring Dark Mode to any of your websites.
+Just copy paste the snippet and you will get a widget to turn on and off the Dark Mode. You can also use it without the widget programmatically. The plugin is lightweight, built in Vanilla.
+It also uses localstorage by default, so your last setting will be remembered!
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
 
@@ -20,7 +20,7 @@ Check out the demo in these websites:
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
 
 ### 🚀 Easy way (using the JSDelivr CDN)
-Just add this code to your html page:
+Just add this code to your HTML page:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
 <script>
@@ -33,7 +33,7 @@ Just add this code to your html page:
 npm install darkmode-js
 ```
 
-Then add the following javascript code:
+Then add the following JavaScript code:
 ```javascript
 import Darkmode from 'darkmode-js';
 
@@ -61,7 +61,7 @@ darkmode.showWidget();
 ```
 
 ## ▶️ Methods
-If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the darkmode is activated with the method `isActivated()`. See them in action in the following example.
+If you don't want to show the widget and enable/disable Darkmode programatically you can use the method `toggle()`. You can also check if the Dark Mode is activated with the method `isActivated()`. See them in action in the following example:
 ```javascript
 const darkmode =  new Darkmode();
 darkmode.toggle();
@@ -71,8 +71,8 @@ console.log(darkmode.isActivated()) // will return true
 ## Override style
 * A CSS class `darkmode--activated` is added to the body tag when the darkmode is activated. You can take advantage of it to override the style and have a custom style
 * Use the class `darkmode-ignore` where you don't want to apply darkmode
-* You can also add this style: `isolation: isolate;` in your css, this will also ignore the darkmode.
-* It is also possible to revert the dark-mode with this style `mix-blend-mode: difference;`
+* You can also add this style: `isolation: isolate;` in your CSS, this will also ignore the darkmode.
+* It is also possible to revert the Dark Mode with this style `mix-blend-mode: difference;`
 
 ### Examples
 ```css
@@ -101,7 +101,7 @@ If it does not work you may have to add the following code, but this will invali
 ```
 
 ## Browser compatibility
-This library uses the CSS `mix-blend-mode: difference;` in order to provide the darkmode.
+This library uses the CSS `mix-blend-mode: difference;` in order to provide the Dark Mode.
 It may not be compatible with all the browsers.
 
 Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
@@ -119,7 +119,7 @@ Please ⭐️ this repository if this project helped you!
 
 ## 🍺 Buy me a beer 
 If you like this project, feel free to donate:
-* Paypal: https://www.paypal.me/kanbanote
+* PayPal: https://www.paypal.me/kanbanote
 * Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
 * Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
 * Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
