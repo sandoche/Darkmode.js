@@ -10,6 +10,9 @@ export default class Darkmode {
     const buttonColorLight = options && options.buttonColorLight || '#fff';
     const label = options && options.label || '';
     const saveInCookies = options && options.saveInCookies;
+    /* eslint-disable */
+    const autoMatchOsTheme = options && options.autoMatchOsTheme === false ? false : true;
+    /* eslint-enable */
 
     const css = `
       .darkmode-layer {
@@ -100,8 +103,10 @@ export default class Darkmode {
     background.classList.add('darkmode-background');
 
     const darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
+    const preferedThemeOs = autoMatchOsTheme && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const darkmodeNeverActivatedByAction = window.localStorage.getItem('darkmode') === null;
 
-    if (darkmodeActivated === true && saveInCookies) {
+    if ((darkmodeActivated === true && saveInCookies) || (darkmodeNeverActivatedByAction && preferedThemeOs)) {
       layer.classList.add('darkmode-layer--expanded', 'darkmode-layer--simple', 'darkmode-layer--no-transition');
       button.classList.add('darkmode-toggle--white');
       document.body.classList.add('darkmode--activated');

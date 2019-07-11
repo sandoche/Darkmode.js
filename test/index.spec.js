@@ -15,6 +15,11 @@ global.window = {
       return true;
     },
     setItem: function() {}
+  },
+  matchMedia() {
+    return {
+      matches: false
+    }
   }
 };
 
@@ -28,7 +33,8 @@ describe('Given an instance of Darkmode', () => {
     buttonColorDark: '#100f2c',
     buttonColorLight: '#fff',
     saveInCookies: false,
-    label: '🌓'
+    label: '🌓',
+    autoMatchOsTheme: true
   });
   describe('After creating an instance', () => {
     it('should not activate darkmode', () => {
