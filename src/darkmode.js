@@ -81,6 +81,14 @@ export default class Darkmode {
         isolation: isolate;
         display: inline-block;
       }
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .darkmode-toggle {display: none !important}
+      }
+
+      @supports (-ms-ime-align:auto), (-ms-accelerator:true) {
+        .darkmode-toggle {display: none !important}
+      }
     `;
 
     const layer = document.createElement('div');
