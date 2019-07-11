@@ -8,6 +8,12 @@ It also uses localstorage by default, so your last setting will be remembered!
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
 
+## Features
+- Widget appears automatically
+- Saving users choice
+- Automatically shows Darkmode if the OS prefered theme is dark (if the browsers supports `prefers-color-scheme`)
+- Can be used programmatically without widget
+
 ## ✨ Demo
 Check out the demo in these websites: 
 - https://darkmodejs.learn.uno
@@ -59,7 +65,7 @@ var options = {
   buttonColorLight: '#fff', // default: '#fff'
   saveInCookies: false, // default: true,
   label: '🌓', // default: ''
-
+  autoMatchOsTheme: true // default: true
 }
 
 const darkmode = new Darkmode(options);
@@ -109,8 +115,11 @@ If it does not work you may have to add the following code, but this will invali
 ## Browser compatibility
 This library uses the CSS `mix-blend-mode: difference;` in order to provide the Dark Mode.
 It may not be compatible with all the browsers. Therefore the widget has been hidden in Internet Explorer and Edge.
+This library also uses `prefers-color-scheme: dark` to automatically enable the Dark Mode if the OS prefered theme is dark.
 
-Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
+Check the compatibility here: 
+- https://caniuse.com/#search=mix-blend-mode
+- https://caniuse.com/#search=prefers-color-scheme (to activate Dark Mode automatically)
 
 ## Development
 * `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
