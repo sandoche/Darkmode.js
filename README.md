@@ -16,6 +16,11 @@ Check out the demo in these websites:
 - https://www.kanbanote.com (without the widget, once logged in)
 - https://www.sandoche.com (with custom label)
 
+## Wordpress plugins
+If you are using Wordpress you may want have a look to these plugins based on Darkmode.js:
+- https://wordpress.org/plugins/blackout-darkmode-widget/
+- https://wordpress.org/plugins/darkmode/
+
 ## 📖 How to use
 Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
 
