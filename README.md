@@ -107,7 +107,7 @@ If it does not work you may have to add the following code, but this will invali
 
 ## Browser compatibility
 This library uses the CSS `mix-blend-mode: difference;` in order to provide the Dark Mode.
-It may not be compatible with all the browsers.
+It may not be compatible with all the browsers. Therefore the widget has been hidden in Internet Explorer and Edge.
 
 Check the compatibility here: https://caniuse.com/#search=mix-blend-mode
 
