@@ -1,17 +1,15 @@
 export default class Darkmode {
   constructor(options) {
-    const bottom = options && options.bottom ? options.bottom : '32px';
-    const right = options && options.right ? options.right : '32px';
-    const left = options && options.left ? options.left : 'unset';
-    const time = options && options.time ? options.time : '0.3s';
-    const mixColor = options && options.mixColor ? options.mixColor : '#fff';
-    const backgroundColor = options && options.backgroundColor ? options.backgroundColor : '#fff';
-    const buttonColorDark = options && options.buttonColorDark ? options.buttonColorDark : '#100f2c';
-    const buttonColorLight = options && options.buttonColorLight ? options.buttonColorLight : '#fff';
-    const label = options && options.label ? options.label : '';
-    /* eslint-disable */
-    const saveInCookies = options && options.saveInCookies === false ? false : true;
-    /* eslint-enable */
+    const bottom = options && options.bottom || '32px';
+    const right = options && options.right || '32px';
+    const left = options && options.left || 'unset';
+    const time = options && options.time || '0.3s';
+    const mixColor = options && options.mixColor || '#fff';
+    const backgroundColor = options && options.backgroundColor || '#fff';
+    const buttonColorDark = options && options.buttonColorDark || '#100f2c';
+    const buttonColorLight = options && options.buttonColorLight || '#fff';
+    const label = options && options.label || '';
+    const saveInCookies = options && options.saveInCookies;
 
     const css = `
       .darkmode-layer {
@@ -38,7 +36,7 @@ export default class Darkmode {
         left: 0;
         transform: scale(1) !important;
       }
-      
+
       .darkmode-layer--expanded {
         transform: scale(100);
         border-radius: 0;
@@ -47,7 +45,7 @@ export default class Darkmode {
       .darkmode-layer--no-transition {
         transition: none;
       }
-      
+
       .darkmode-toggle {
         background: ${buttonColorDark};
         width: 3rem;
@@ -63,7 +61,7 @@ export default class Darkmode {
         justify-content: center;
         align-items: center;
       }
-      
+
       .darkmode-toggle--white {
         background: ${buttonColorLight};
       }
@@ -78,7 +76,7 @@ export default class Darkmode {
         top: 0;
         left: 0;
       }
-      
+
       img, .darkmode-ignore {
         isolation: isolate;
         display: inline-block;
