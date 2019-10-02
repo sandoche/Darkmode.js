@@ -1,8 +1,10 @@
-import Darkmode from './darkmode';
+import Darkmode, { IS_BROWSER } from './darkmode';
 export default Darkmode;
 
 /* eslint-disable */
-(function(window){
-  window.Darkmode = Darkmode;
-})(window)
+if (IS_BROWSER) {
+  (function(window) {
+    window.Darkmode = Darkmode;
+  })(window);
+}
 /* eslint-enable */

@@ -1,17 +1,23 @@
+export const IS_BROWSER = typeof window !== 'undefined';
+
 export default class Darkmode {
   constructor(options) {
-    const bottom = options && options.bottom || '32px';
-    const right = options && options.right || '32px';
-    const left = options && options.left || 'unset';
-    const time = options && options.time || '0.3s';
-    const mixColor = options && options.mixColor || '#fff';
-    const backgroundColor = options && options.backgroundColor || '#fff';
-    const buttonColorDark = options && options.buttonColorDark || '#100f2c';
-    const buttonColorLight = options && options.buttonColorLight || '#fff';
-    const label = options && options.label || '';
+    if (!IS_BROWSER) {
+      return;
+    }
+    const bottom = (options && options.bottom) || '32px';
+    const right = (options && options.right) || '32px';
+    const left = (options && options.left) || 'unset';
+    const time = (options && options.time) || '0.3s';
+    const mixColor = (options && options.mixColor) || '#fff';
+    const backgroundColor = (options && options.backgroundColor) || '#fff';
+    const buttonColorDark = (options && options.buttonColorDark) || '#100f2c';
+    const buttonColorLight = (options && options.buttonColorLight) || '#fff';
+    const label = (options && options.label) || '';
     const saveInCookies = options && options.saveInCookies;
     /* eslint-disable */
-    const autoMatchOsTheme = options && options.autoMatchOsTheme === false ? false : true;
+    const autoMatchOsTheme =
+      options && options.autoMatchOsTheme === false ? false : true;
     /* eslint-enable */
 
     const css = `
@@ -102,12 +108,23 @@ export default class Darkmode {
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
 
-    const darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
-    const preferedThemeOs = autoMatchOsTheme && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const darkmodeNeverActivatedByAction = window.localStorage.getItem('darkmode') === null;
+    const darkmodeActivated =
+      window.localStorage.getItem('darkmode') === 'true';
+    const preferedThemeOs =
+      autoMatchOsTheme &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const darkmodeNeverActivatedByAction =
+      window.localStorage.getItem('darkmode') === null;
 
-    if ((darkmodeActivated === true && saveInCookies) || (darkmodeNeverActivatedByAction && preferedThemeOs)) {
-      layer.classList.add('darkmode-layer--expanded', 'darkmode-layer--simple', 'darkmode-layer--no-transition');
+    if (
+      (darkmodeActivated === true && saveInCookies) ||
+      (darkmodeNeverActivatedByAction && preferedThemeOs)
+    ) {
+      layer.classList.add(
+        'darkmode-layer--expanded',
+        'darkmode-layer--simple',
+        'darkmode-layer--no-transition'
+      );
       button.classList.add('darkmode-toggle--white');
       document.body.classList.add('darkmode--activated');
     }
@@ -129,11 +146,17 @@ export default class Darkmode {
 
     linkElement.setAttribute('rel', 'stylesheet');
     linkElement.setAttribute('type', 'text/css');
-    linkElement.setAttribute('href', 'data:text/css;charset=UTF-8,' + encodeURIComponent(css));
+    linkElement.setAttribute(
+      'href',
+      'data:text/css;charset=UTF-8,' + encodeURIComponent(css)
+    );
     document.head.appendChild(linkElement);
   }
 
   showWidget() {
+    if (!IS_BROWSER) {
+      return;
+    }
     const button = this.button;
     const layer = this.layer;
     const time = parseFloat(this.time) * 1000;
@@ -165,6 +188,9 @@ export default class Darkmode {
   }
 
   toggle() {
+    if (!IS_BROWSER) {
+      return;
+    }
     const layer = this.layer;
     const isDarkmode = this.isActivated();
 
@@ -174,6 +200,9 @@ export default class Darkmode {
   }
 
   isActivated() {
+    if (!IS_BROWSER) {
+      return null;
+    }
     return document.body.classList.contains('darkmode--activated');
   }
 }
