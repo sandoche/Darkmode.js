@@ -152,7 +152,7 @@
     "operator-linebreak": [2, "after"],
     "padded-blocks": 0,
     "quote-props": 0,
-    "quotes": [2, "single", {"avoidEscape":true}],
+    "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
     "semi": [2, "always"],
     "semi-spacing": 0,
