@@ -2,16 +2,16 @@
 
 🌓 Add a Dark Mode / Night Mode to your website in a few seconds
 
-This library uses the css `mix-blend-mode` in order to bring Dark Mode to any of your websites.
-Just copy paste the snippet and you will get a widget to turn on and off the Dark Mode. You can also use it without the widget programmatically. The plugin is lightweight, built in Vanilla.
-It also uses localstorage by default, so your last setting will be remembered!
+This library uses the CSS `mix-blend-mode` to bring Dark Mode to any of your websites.
+Just copy-paste the snippet and you will get a widget to turn on and off the Dark Mode. You can also use it without the widget programmatically. The plugin is lightweight, built-in Vanilla.
+It also uses local storage by default, so your last setting will be remembered!
 
 I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
 
 ## Features
 - Widget appears automatically
 - Saving users choice
-- Automatically shows Darkmode if the OS prefered theme is dark (if the browsers supports `prefers-color-scheme`)
+- Automatically shows Darkmode if the OS prefered theme is dark (if the browsers support `prefers-color-scheme`)
 - Can be used programmatically without widget
 
 ## ✨ Demo
@@ -23,12 +23,12 @@ Check out the demo in these websites:
 - https://www.sandoche.com (with custom label)
 
 ## Wordpress plugins
-If you are using Wordpress you may want have a look to these plugins based on Darkmode.js:
+If you are using Wordpress you may want to have a look at these plugins based on Darkmode.js:
 - https://wordpress.org/plugins/blackout-darkmode-widget/
 - https://wordpress.org/plugins/darkmode/
 
 ## 📖 How to use
-Darkmode.js is very easy to use, just copy paste the following code or use the npm package.
+Darkmode.js is very easy to use, just copy-paste the following code or use the npm package.
 
 ### 🚀 Easy way (using the JSDelivr CDN)
 Just add this code to your HTML page:
@@ -113,7 +113,7 @@ If it does not work you may have to add the following code, but this will invali
 ```
 
 ## Browser compatibility
-This library uses the CSS `mix-blend-mode: difference;` in order to provide the Dark Mode.
+This library uses the CSS `mix-blend-mode: difference;` to provide the Dark Mode.
 It may not be compatible with all the browsers. Therefore the widget has been hidden in Internet Explorer and Edge.
 This library also uses `prefers-color-scheme: dark` to automatically enable the Dark Mode if the OS prefered theme is dark.
 
@@ -122,7 +122,7 @@ Check the compatibility here:
 - https://caniuse.com/#search=prefers-color-scheme (to activate Dark Mode automatically)
 
 ## Development
-* `yarn build` or `npm run build` - produces production version of your library under the `lib` folder
+* `yarn build` or `npm run build` - produces a production version of your library under the `lib` folder
 * `yarn dev` or `npm run dev` - produces development version of your library and runs a watcher
 * `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
