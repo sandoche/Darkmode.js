@@ -17,7 +17,7 @@ export default class Darkmode {
       buttonColorLight: '#100f2c',
       label: '',
       saveInCookies: false,
-      autoMatchOsTheme: false
+      autoMatchOsTheme: true
     };
 
     options = Object.assign({}, defaultOptions, options);
