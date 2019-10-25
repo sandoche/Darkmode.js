@@ -5,27 +5,29 @@ export default class Darkmode {
     if (!IS_BROWSER) {
       return;
     }
-    const bottom = (options && options.bottom) || '32px';
-    const right = (options && options.right) || '32px';
-    const left = (options && options.left) || 'unset';
-    const time = (options && options.time) || '0.3s';
-    const mixColor = (options && options.mixColor) || '#fff';
-    const backgroundColor = (options && options.backgroundColor) || '#fff';
-    const buttonColorDark = (options && options.buttonColorDark) || '#100f2c';
-    const buttonColorLight = (options && options.buttonColorLight) || '#fff';
-    const label = (options && options.label) || '';
-    const saveInCookies = options && options.saveInCookies;
-    /* eslint-disable */
-    const autoMatchOsTheme =
-      options && options.autoMatchOsTheme === false ? false : true;
-    /* eslint-enable */
+
+    const defaultOptions = {
+      bottom: '32px',
+      right: '32px',
+      left: 'unset',
+      time: '0.3s',
+      mixColor: '#fff',
+      backgroundColor: '#fff',
+      buttonColorDark: '#fff',
+      buttonColorLight: '#100f2c',
+      label: '',
+      saveInCookies: false,
+      autoMatchOsTheme: false
+    };
+
+    options = Object.assign({}, defaultOptions, options);
 
     const css = `
       .darkmode-layer {
         position: fixed;
         pointer-events: none;
-        background: ${mixColor};
-        transition: all ${time} ease;
+        background: ${options.mixColor};
+        transition: all ${options.time} ease;
         mix-blend-mode: difference;
       }
 
@@ -33,9 +35,9 @@ export default class Darkmode {
         width: 2.9rem;
         height: 2.9rem;
         border-radius: 50%;
-        right: ${right};
-        bottom: ${bottom};
-        left: ${left};
+        right: ${options.right};
+        bottom: ${options.bottom};
+        left: ${options.left};
       }
 
       .darkmode-layer--simple {
@@ -56,14 +58,14 @@ export default class Darkmode {
       }
 
       .darkmode-toggle {
-        background: ${buttonColorDark};
+        background: ${options.buttonColorDark};
         width: 3rem;
         height: 3rem;
         position: fixed;
         border-radius: 50%;
-        right: ${right};
-        bottom: ${bottom};
-        left: ${left};
+        right: ${options.right};
+        bottom: ${options.bottom};
+        left: ${options.left};
         cursor: pointer;
         transition: all 0.5s ease;
         display: flex;
@@ -72,11 +74,11 @@ export default class Darkmode {
       }
 
       .darkmode-toggle--white {
-        background: ${buttonColorLight};
+        background: ${options.buttonColorLight};
       }
 
       .darkmode-background {
-        background: ${backgroundColor};
+        background: ${options.backgroundColor};
         position: fixed;
         pointer-events: none;
         z-index: -10;
@@ -104,20 +106,20 @@ export default class Darkmode {
     const button = document.createElement('div');
     const background = document.createElement('div');
 
-    button.innerHTML = label;
+    button.innerHTML = options.label;
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
 
     const darkmodeActivated =
       window.localStorage.getItem('darkmode') === 'true';
     const preferedThemeOs =
-      autoMatchOsTheme &&
+      options.autoMatchOsTheme &&
       window.matchMedia('(prefers-color-scheme: dark)').matches;
     const darkmodeNeverActivatedByAction =
       window.localStorage.getItem('darkmode') === null;
 
     if (
-      (darkmodeActivated === true && saveInCookies) ||
+      (darkmodeActivated === true && options.saveInCookies) ||
       (darkmodeNeverActivatedByAction && preferedThemeOs)
     ) {
       layer.classList.add(
@@ -137,8 +139,8 @@ export default class Darkmode {
 
     this.button = button;
     this.layer = layer;
-    this.saveInCookies = saveInCookies;
-    this.time = time;
+    this.saveInCookies = options.saveInCookies;
+    this.time = options.time;
   }
 
   addStyle(css) {

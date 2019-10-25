@@ -1,6 +1,5 @@
 /* global __dirname, require, module*/
 
-const webpack = require('webpack');
 const path = require('path');
 const env = require('yargs').argv.env; // use --env with webpack 2
 const pkg = require('./package.json');
@@ -32,14 +31,17 @@ const config = {
   module: {
     rules: [
       {
-        test: /(\.jsx|\.js)$/,
+        test: /(\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules)/
       },
       {
-        test: /(\.jsx|\.js)$/,
+        test: /(\.js)$/,
         loader: 'eslint-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        options: {
+          fix: true
+        }
       }
     ]
   },
