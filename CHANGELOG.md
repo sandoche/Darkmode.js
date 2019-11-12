@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.3
+
+* Putting back the default values of button's color
+
 ## 1.5.2
 
 * Putting back `saveInCookies` to `true` in the default settings

@@ -13,8 +13,8 @@ export default class Darkmode {
       time: '0.3s',
       mixColor: '#fff',
       backgroundColor: '#fff',
-      buttonColorDark: '#fff',
-      buttonColorLight: '#100f2c',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
       label: '',
       saveInCookies: true,
       autoMatchOsTheme: true
