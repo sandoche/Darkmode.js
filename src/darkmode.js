@@ -16,7 +16,7 @@ export default class Darkmode {
       buttonColorDark: '#fff',
       buttonColorLight: '#100f2c',
       label: '',
-      saveInCookies: false,
+      saveInCookies: true,
       autoMatchOsTheme: true
     };
 
