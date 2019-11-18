@@ -63,6 +63,7 @@ export default class Darkmode {
         height: 3rem;
         position: fixed;
         border-radius: 50%;
+        border:none;
         right: ${options.right};
         bottom: ${options.bottom};
         left: ${options.left};
@@ -103,7 +104,7 @@ export default class Darkmode {
     `;
 
     const layer = document.createElement('div');
-    const button = document.createElement('div');
+    const button = document.createElement('button');
     const background = document.createElement('div');
 
     button.innerHTML = options.label;
@@ -171,15 +172,19 @@ export default class Darkmode {
 
       if (!isDarkmode) {
         layer.classList.add('darkmode-layer--expanded');
+        button.setAttribute('disabled', 'disabled');
         setTimeout(() => {
           layer.classList.add('darkmode-layer--no-transition');
           layer.classList.add('darkmode-layer--simple');
+          button.removeAttribute('disabled');
         }, time);
       } else {
         layer.classList.remove('darkmode-layer--simple');
+        button.setAttribute('disabled', 'disabled');
         setTimeout(() => {
           layer.classList.remove('darkmode-layer--no-transition');
           layer.classList.remove('darkmode-layer--expanded');
+          button.removeAttribute('disabled');
         }, 1);
       }
 
