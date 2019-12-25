@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.4
+
+* Fixing the bug of overlay breaking when too many clicks are done at the same time by disabling/enabling the button
+
 ## 1.5.3
 
 * Putting back the default values of button's color

@@ -172,7 +172,7 @@ export default class Darkmode {
 
       if (!isDarkmode) {
         layer.classList.add('darkmode-layer--expanded');
-        button.setAttribute('disabled', 'disabled');
+        button.setAttribute('disabled', true);
         setTimeout(() => {
           layer.classList.add('darkmode-layer--no-transition');
           layer.classList.add('darkmode-layer--simple');
@@ -180,7 +180,7 @@ export default class Darkmode {
         }, time);
       } else {
         layer.classList.remove('darkmode-layer--simple');
-        button.setAttribute('disabled', 'disabled');
+        button.setAttribute('disabled', true);
         setTimeout(() => {
           layer.classList.remove('darkmode-layer--no-transition');
           layer.classList.remove('darkmode-layer--expanded');
