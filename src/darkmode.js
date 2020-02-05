@@ -78,6 +78,10 @@ export default class Darkmode {
         background: ${options.buttonColorLight};
       }
 
+      .darkmode-toggle--inactive {
+        display: none;
+      }
+
       .darkmode-background {
         background: ${options.backgroundColor};
         position: fixed;
@@ -108,6 +112,7 @@ export default class Darkmode {
     const background = document.createElement('div');
 
     button.innerHTML = options.label;
+    button.classList.add('darkmode-toggle--inactive');
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
 
@@ -165,6 +170,7 @@ export default class Darkmode {
     const time = parseFloat(this.time) * 1000;
 
     button.classList.add('darkmode-toggle');
+    button.classList.remove('darkmode-toggle--inactive');
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
