@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5
+
+* Fixing bug of visible button even when using programatically without widget
+
 ## 1.5.4
 
 * Fixing the bug of overlay breaking when too many clicks are done at the same time by disabling/enabling the button

@@ -33,7 +33,7 @@ Darkmode.js is very easy to use, just copy-paste the following code or use the n
 ### 🚀 Easy way (using the JSDelivr CDN)
 Just add this code to your HTML page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.4/lib/darkmode-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
   new Darkmode().showWidget();
 </script>
