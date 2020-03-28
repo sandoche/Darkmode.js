@@ -21,6 +21,7 @@ Check out the demo in these websites:
 - https://what.toeat.in (with custom label)
 - https://www.kanbanote.com (without the widget, once logged in)
 - https://www.sandoche.com (with custom label)
+- https://pilab.dev (without the widget, with a custom toggle button)
 
 ## Wordpress plugins
 If you are using Wordpress you may want to have a look at these plugins based on Darkmode.js:
