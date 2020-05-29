@@ -171,6 +171,8 @@ export default class Darkmode {
 
     button.classList.add('darkmode-toggle');
     button.classList.remove('darkmode-toggle--inactive');
+    button.setAttribute("aria-label", "Activate dark mode");
+    button.setAttribute("aria-checked", "false");
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
@@ -206,10 +208,14 @@ export default class Darkmode {
     }
     const layer = this.layer;
     const isDarkmode = this.isActivated();
+    const button = this.button;
 
     layer.classList.toggle('darkmode-layer--simple');
     document.body.classList.toggle('darkmode--activated');
     window.localStorage.setItem('darkmode', !isDarkmode);
+    button.setAttribute("aria-label", "De-activate dark mode");
+    button.setAttribute("aria-checked", "true");
+
   }
 
   isActivated() {
