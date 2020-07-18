@@ -36,7 +36,10 @@ Just add this code to your HTML page:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
 <script>
-  new Darkmode().showWidget();
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
 </script>
 ```
 
