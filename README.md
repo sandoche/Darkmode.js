@@ -58,7 +58,7 @@ new Darkmode().showWidget();
 ## ⚙️ Options
 Here are the option availables:
 ```javascript
-var options = {
+const options = {
   bottom: '64px', // default: '32px'
   right: 'unset', // default: '32px'
   left: '32px', // default: 'unset'
