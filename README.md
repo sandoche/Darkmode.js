@@ -1,4 +1,5 @@
-# Darkmode.js ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+# Darkmode.js
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche) [![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
 
 🌓 Add a Dark Mode / Night Mode to your website in a few seconds
 
