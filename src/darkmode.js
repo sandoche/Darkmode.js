@@ -173,6 +173,7 @@ export default class Darkmode {
     button.classList.remove('darkmode-toggle--inactive');
     button.setAttribute("aria-label", "Activate dark mode");
     button.setAttribute("aria-checked", "false");
+    button.setAttribute("role", "checkbox");
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
