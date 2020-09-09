@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.7
+
+* Adding role for better accessiblity of the widget
+
 ## 1.5.6
 
 * Aria labels added for accessibility to the widget
