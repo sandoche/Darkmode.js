@@ -1,5 +1,10 @@
 # Darkmode.js
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche) [![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
+
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+[![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche)
+[![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
 
 🌓 Add a Dark Mode / Night Mode to your website in a few seconds
 
@@ -148,3 +153,17 @@ If you like this project, feel free to donate:
 * Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
 * Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
 * Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
+
+## 📄 License
+
+[MIT License](./LICENSE)
+
+Copyright (c) Sandoche Adittane
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/darkmode-js/latest.svg
+[npm-version-href]: https://npmjs.com/package/darkmode-js
+[npm-downloads-src]: https://img.shields.io/npm/dt/darkmode-js.svg
+[npm-downloads-href]: https://npmjs.com/package/darkmode-js
+[license-src]: https://img.shields.io/npm/l/darkmode-js.svg
+[license-href]: https://npmjs.com/package/darkmode-js
