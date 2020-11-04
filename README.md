@@ -29,6 +29,10 @@ If you are using Wordpress you may want to have a look at these plugins based on
 - https://wordpress.org/plugins/blackout-darkmode-widget/
 - https://wordpress.org/plugins/darkmode/
 
+## Nuxt.js module
+If you are using Nuxt.js there is a module for Darkmode.js:
+- https://github.com/sandoche/nuxtjs-darkmode-js-module
+
 ## 📖 How to use
 Darkmode.js is very easy to use, just copy-paste the following code or use the npm package.
 
