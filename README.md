@@ -12,7 +12,7 @@ I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon
 ## Features
 - Widget appears automatically
 - Saving users choice
-- Automatically shows Darkmode if the OS prefered theme is dark (if the browsers support `prefers-color-scheme`)
+- Automatically shows Darkmode if the OS preferred theme is dark (if the browsers support `prefers-color-scheme`)
 - Can be used programmatically without widget
 
 ## ✨ Demo
