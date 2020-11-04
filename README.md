@@ -166,4 +166,4 @@ Copyright (c) Sandoche Adittane
 [npm-downloads-src]: https://img.shields.io/npm/dt/darkmode-js.svg
 [npm-downloads-href]: https://npmjs.com/package/darkmode-js
 [license-src]: https://img.shields.io/npm/l/darkmode-js.svg
-[license-href]: https://npmjs.com/package/darkmode-js
+[license-href]: ./LICENSE
