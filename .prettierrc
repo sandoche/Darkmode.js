@@ -1,0 +1,11 @@
+{
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "semi": true,
+  "printWidth": 110,
+  "arrowParens": "avoid",
+  "htmlWhitespaceSensitivity": "strict",
+  "trailingComma": "none"
+}
