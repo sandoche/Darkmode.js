@@ -3,7 +3,7 @@ export default Darkmode;
 
 /* eslint-disable */
 if (IS_BROWSER) {
-  (function(window) {
+  (function (window) {
     window.Darkmode = Darkmode;
   })(window);
 }

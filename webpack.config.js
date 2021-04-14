@@ -40,6 +40,7 @@ const config = {
         loader: 'eslint-loader',
         exclude: /node_modules/,
         options: {
+          formatter: require('eslint/lib/cli-engine/formatters/stylish'),
           fix: true
         }
       }

@@ -116,13 +116,10 @@ export default class Darkmode {
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
 
-    const darkmodeActivated =
-      window.localStorage.getItem('darkmode') === 'true';
+    const darkmodeActivated = window.localStorage.getItem('darkmode') === 'true';
     const preferedThemeOs =
-      options.autoMatchOsTheme &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const darkmodeNeverActivatedByAction =
-      window.localStorage.getItem('darkmode') === null;
+      options.autoMatchOsTheme && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const darkmodeNeverActivatedByAction = window.localStorage.getItem('darkmode') === null;
 
     if (
       (darkmodeActivated === true && options.saveInCookies) ||
@@ -154,10 +151,7 @@ export default class Darkmode {
 
     linkElement.setAttribute('rel', 'stylesheet');
     linkElement.setAttribute('type', 'text/css');
-    linkElement.setAttribute(
-      'href',
-      'data:text/css;charset=UTF-8,' + encodeURIComponent(css)
-    );
+    linkElement.setAttribute('href', 'data:text/css;charset=UTF-8,' + encodeURIComponent(css));
     document.head.appendChild(linkElement);
   }
 
@@ -171,9 +165,9 @@ export default class Darkmode {
 
     button.classList.add('darkmode-toggle');
     button.classList.remove('darkmode-toggle--inactive');
-    button.setAttribute("aria-label", "Activate dark mode");
-    button.setAttribute("aria-checked", "false");
-    button.setAttribute("role", "checkbox");
+    button.setAttribute('aria-label', 'Activate dark mode');
+    button.setAttribute('aria-checked', 'false');
+    button.setAttribute('role', 'checkbox');
     layer.classList.add('darkmode-layer--button');
 
     button.addEventListener('click', () => {
@@ -214,9 +208,8 @@ export default class Darkmode {
     layer.classList.toggle('darkmode-layer--simple');
     document.body.classList.toggle('darkmode--activated');
     window.localStorage.setItem('darkmode', !isDarkmode);
-    button.setAttribute("aria-label", "De-activate dark mode");
-    button.setAttribute("aria-checked", "true");
-
+    button.setAttribute('aria-label', 'De-activate dark mode');
+    button.setAttribute('aria-checked', 'true');
   }
 
   isActivated() {
