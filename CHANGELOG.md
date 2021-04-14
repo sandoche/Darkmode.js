@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.8
+
+* Adding linter to the repository
+
 ## 1.5.7
 
 * Adding role for better accessiblity of the widget
