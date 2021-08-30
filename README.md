@@ -12,7 +12,7 @@ This library uses the CSS `mix-blend-mode` to bring Dark Mode to any of your web
 Just copy-paste the snippet and you will get a widget to turn on and off the Dark Mode. You can also use it without the widget programmatically. The plugin is lightweight, built-in Vanilla.
 It also uses local storage by default, so your last setting will be remembered!
 
-I have been inspired by this article: https://dev.wgao19.cc/2019-05-04__sun-moon-blending-mode/
+I have been inspired by this article: https://www.aworkinprogress.dev/sun-moon-blending-mode
 
 ## Features
 - Widget appears automatically
