@@ -29,6 +29,10 @@ Check out the demo in these websites:
 - https://www.sandoche.com (with custom label)
 - https://pilab.dev (without the widget, with a custom toggle button)
 
+## Drupal Module
+If you are using Drupal you may want to have a look at these plugins based on Darkmode.js:
+- https://www.drupal.org/project/darkmode
+
 ## Wordpress plugins
 If you are using Wordpress you may want to have a look at these plugins based on Darkmode.js:
 - https://wordpress.org/plugins/blackout-darkmode-widget/
