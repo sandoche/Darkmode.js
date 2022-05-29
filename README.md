@@ -35,7 +35,7 @@ If you are using Wordpress you may want to have a look at these plugins based on
 - https://wordpress.org/plugins/darkmode/
 
 ## Drupal plugin
-If you are using Drupal you may want to have a look at these plugins based on Darkmode.js:
+If you are using Drupal you may want to have a look at this plugin based on Darkmode.js:
 - https://www.drupal.org/project/darkmode
 
 ## Nuxt.js module
