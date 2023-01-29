@@ -29,6 +29,12 @@ Check out the demo in these websites:
 - https://www.sandoche.com (with custom label)
 - https://pilab.dev (without the widget, with a custom toggle button)
 
+## Userscript
+If you want to quickly check Darkmode.js effect on any site:
+- https://github.com/Purfview/Darkmode-User
+- You would need to edit the userscript and add site's URL with `@include`.
+- Custom CSS can be added to `siteUnknown()` function.
+
 ## Wordpress plugins
 If you are using Wordpress you may want to have a look at these plugins based on Darkmode.js:
 - https://wordpress.org/plugins/blackout-darkmode-widget/
